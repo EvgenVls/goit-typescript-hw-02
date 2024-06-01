@@ -1,0 +1,11 @@
+.imageList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style-type: none;
+  margin-bottom: 12px;
+}
+
+.imageListItem {
+  width: calc((100% - 36px) / 4);
+}

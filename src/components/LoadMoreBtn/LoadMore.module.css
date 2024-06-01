@@ -1,0 +1,13 @@
+.loadMoreBtn {
+  min-width: 150px;
+  border-radius: 4px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.loadMoreBtn:hover {
+  background-color: rgb(165, 106, 220);
+}
