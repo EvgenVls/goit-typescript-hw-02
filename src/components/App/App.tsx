@@ -11,15 +11,15 @@ import "./App.css";
 
 function App() {
   const [photoCollection, setPhotoCollection] = useState([]);
-  const [query, setQuery] = useState("");
-  const [page, setPage] = useState(1);
-  const [showBtn, setShowBtn] = useState(false);
-  const [loader, setLoader] = useState(false);
-  const [error, setError] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [photoForModal, setPhotoForModal] = useState({});
+  const [query, setQuery] = useState<string>("");
+  const [page, setPage] = useState<number>(1);
+  const [showBtn, setShowBtn] = useState<boolean>(false);
+  const [loader, setLoader] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
+  const [photoForModal, setPhotoForModal] = useState<IImageModal>({});
 
-  const handleSearch = (newQuery) => {
+  const handleSearch = (newQuery: string) => {
     setQuery(newQuery);
     setPage(1);
     setPhotoCollection([]);

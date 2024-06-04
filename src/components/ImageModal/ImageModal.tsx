@@ -1,5 +1,6 @@
 import Modal from "react-modal";
 import { HiOutlineThumbUp } from "react-icons/hi";
+import { ImageModalProps } from "./ImageModal.types";
 
 Modal.setAppElement("#root");
 
@@ -17,7 +18,7 @@ const customStyles = {
 export default function ImageModal({
   obj: { urls, description_alt, description, likes },
   modalIsOpen,
-}) {
+}: ImageModalProps) {
   function openModal() {
     modalIsOpen(true);
   }
